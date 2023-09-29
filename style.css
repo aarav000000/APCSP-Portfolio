@@ -1,0 +1,24 @@
+h1{
+  color: purple;
+  font-size:10vw;
+}
+
+.grid{
+  display: flex;
+  justify-content: space-evenly;
+position:sticky;
+  
+}
+.first{
+  position: sticky;
+  
+}
+.last{
+  position sticky;
+  margin-top: 20vw;
+}
+.long{
+  background-color: green;
+  height: 20000000px;
+  
+}
