@@ -33,9 +33,10 @@ function animateStars() {
     const stars = document.querySelectorAll('.star');
 
     stars.forEach((star) => {
-        const duration = Math.random() * 5 + 2; // Random animation duration
-        star.style.animation = `twinkle ${duration}s linear infinite alternate`;
-      
+        const duration = Math.random() * 3 + 2; // Random animation duration
+        star.style.animation = `twinkle ${duration}s linear ${Math.random()*5}s infinite alternate`;
+        
+        
       
         // Randomly change star position after each animation iteration
         setTimeout(() => {
@@ -92,7 +93,21 @@ function test() {
 }
 animateNames();
 
+const planets = document.querySelectorAll('#planet-container img');
+
+planets.forEach((planet, index) => {
+  const animationDuration = 30 + index * 10; // Adjust duration for each planet
+  planet.style.animation = `rotate ${animationDuration}s linear infinite`;
+});
+document.querySelector('div').addEventListener('mouseover', function() {
+  document.querySelector('div').classList.add('custom-cursor');
+});
+// Add an event listener to revert to the default cursor on mouseout
+document.querySelector('div').addEventListener('mouseout', function() {
+  document.querySelector('div').classList.remove('custom-cursor');
+});
 `
+
 // We can import raw code fragments for samples, like this:
 import fragment from './code-fragments/fragment.js?raw'
 document.querySelector('#fragment').textContent = fragment;

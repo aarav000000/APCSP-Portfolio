@@ -6,16 +6,22 @@ body {
   
 }
 .container {
-  margin-top: 11vw;
-  margin-bottom: 11vw;
+ 
+  margin-bottom: 5.5vw;
     width: 100%;
     height: 30vw;
     display: flex;
     justify-content: center;
     align-items: center;
   color: #bb14fe;
-  
+font-family: space;
+  padding: 17vw;
 }
+@font-face{
+  font-family: space;
+  src: url("space.ttf");
+}
+
 .names {
     position: relative;
   z-index: 2;
@@ -25,8 +31,9 @@ body {
 
 .name {
     position: absolute;
-    font-size: 10vw;
+    font-size: 5.6vw;
     text-align: center;
+
 
 }
 .projects{
@@ -37,6 +44,7 @@ body {
     align-items: center;
   color: #bb14fe;
   font-size: 4vw;
+ 
 }
 .p1{
   content:" ";
@@ -77,16 +85,80 @@ body {
     height: 0.2vw;
     background-color: white;
     border-radius: 50%;
+
 }
 
 @keyframes twinkle {
     0% {
-     
         opacity: 1;
+      scale: 1.1
     }
     100% {
-  
-    
         opacity: 0.1;
+      scale: 0.8
     }
+}
+#planet-container {
+   margin-top: 17vw;
+  display: flex;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2; 
+  justify-content: center;
+}
+#planet-container img {
+  position: relative;
+  width: 17vw;
+  animation: rotate 1s linear infinite;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.grid{
+  display: flex;
+  grid-template-areas: 
+    "planet1" "container" "planet2";
+}
+.custom-cursor {
+  cursor: url('curser.png'), auto;
+}
+.about-title{
+  font-size: 4vw;
+  color: #bb14fe;
+   
+}
+.about{
+
+    display: flex;
+  flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  color: #bb14fe;
+  font-size: 3vw;
+  padding: 6vw;
+
+}
+.license{
+  font-size: 0.8vw;
+  display: flex;
+  justify-content: center;
+  
+}
+.about-title{
+    display: flex;
+  flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  color: #bb14fe;
+  font-size: 4vw;
+
+  
 }
