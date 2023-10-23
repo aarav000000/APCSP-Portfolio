@@ -6,6 +6,33 @@
 import './style.css'
 //from chat.gpt//
 // JavaScript
+document.querySelector('.prev').addEventListener('click', () => plusSlides(-1));
+document.querySelector('.next').addEventListener('click', () => plusSlides(1));
+
+let slideIndex = 0;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+
+function showSlides(n) {
+    const slides = document.querySelectorAll('.slide');
+
+    if (n >= slides.length) {
+        slideIndex = 0;
+    }
+    if (n < 0) {
+        slideIndex = slides.length - 1;
+    }
+
+    slides.forEach((slide) => {
+        slide.style.display = 'none';
+    });
+
+    slides[slideIndex].style.display = 'block';
+}
+
 function createStars() {
     const body = document.body; // Target the body element
 
@@ -106,6 +133,9 @@ document.querySelector('div').addEventListener('mouseover', function() {
 document.querySelector('div').addEventListener('mouseout', function() {
   document.querySelector('div').classList.remove('custom-cursor');
 });
+
+
+
 `
 
 // We can import raw code fragments for samples, like this:

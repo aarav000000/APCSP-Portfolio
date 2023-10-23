@@ -37,18 +37,46 @@ font-family: space;
 
 }
 .projects{
-
     display: flex;
   flex-direction: column;
     justify-content: center;
     align-items: center;
   color: #bb14fe;
   font-size: 4vw;
- 
+
+ position: relative;
+}
+.slide {
+    display: none;
+    width: 100%;
+    height: 400px; /* Adjust this to the desired height */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Style for the previous and next arrow buttons */
+.prev, .next {
+    position: absolute;
+    top: 91%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  color: #bb14fe;
+  z-index: 2;
+  font-size: 4vw
+}
+
+.prev {
+    left: 0;
+  margin-left: 22vw;
+}
+
+.next {
+    right: 0;
+   margin-right: 22vw;
 }
 .p1{
   content:" ";
-  background-image: url('binary.png');
+  background-image: url('/projects/portfolio.png');
   width: 42vw;
   height: 26vw;
   display: block;
@@ -76,6 +104,38 @@ font-family: space;
     transition: opacity 0.3s ease-in-out;
 }
 .p1:hover div.p1t{
+ opacity: 1;
+}
+.p2{
+  content:" ";
+  background-image: url('/projects/binary.png');
+  width: 42vw;
+  height: 26vw;
+  display: block;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  margin: auto;
+}
+.p2t{
+    position: absolute;
+    /* Center on the screen (help from ChatGPT) */  
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  /* End centering code */
+    width: 42vw;
+    height: 26vw;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #bb14fe;
+  /* Help from Hinkle */
+  box-sizing: border-box;
+  padding: 3vw;
+   font-size: 2vw;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+.p2:hover div.p2t{
  opacity: 1;
 }
 .star {
