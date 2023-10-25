@@ -57,8 +57,8 @@ font-family: space;
 /* Style for the previous and next arrow buttons */
 .prev, .next {
     position: absolute;
-    top: 91%;
-    transform: translateY(-50%);
+    top: 90%;
+   
     cursor: pointer;
   color: #bb14fe;
   z-index: 2;
@@ -221,4 +221,8 @@ font-family: space;
   font-size: 4vw;
 
   
+}
+.prev:hover,
+.next:hover {
+  transform: scale(1.2); /* Scale the element to 120% of its original size on hover */
 }

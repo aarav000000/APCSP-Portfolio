@@ -126,13 +126,6 @@ planets.forEach((planet, index) => {
   const animationDuration = 30 + index * 10; // Adjust duration for each planet
   planet.style.animation = `rotate ${animationDuration}s linear infinite`;
 });
-document.querySelector('div').addEventListener('mouseover', function() {
-  document.querySelector('div').classList.add('custom-cursor');
-});
-// Add an event listener to revert to the default cursor on mouseout
-document.querySelector('div').addEventListener('mouseout', function() {
-  document.querySelector('div').classList.remove('custom-cursor');
-});
 
 
 
