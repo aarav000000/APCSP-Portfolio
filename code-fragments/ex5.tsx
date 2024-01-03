@@ -1,0 +1,1 @@
+export const OnscreenQwerty: React.FC<OnScreenQwertyProps> = ({onChange,onGuess}) => {

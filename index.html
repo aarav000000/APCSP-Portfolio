@@ -47,9 +47,59 @@
        </div>
       <div class='p2 slide'>
         
+
          <div class='p2t'>In the Binary Search project my team created a website that could guess the NBA team the user was thinking of in 5 guess or less.This project was done with pair programing with three people. Also in this project we put in different inputs for every output to try to guess the team.<a href='https://binary-search-game-group-project-iacs-apcsp-23-24.iacs-apcsp-23-24.repl.co/' target='_blank' >Click Here To Play</a></div>
 
       </div>
+      <div class='p3 slide'>
+        <a href='https://hangman-aarav-patel.netlify.app/'  target='_blank'>
+        <div class='p3t'>
+          <p>The game I made was a hangman game. The way it works is that there is an on-screen keyboard. After the user types a letter in, they have to press guess. Once they press guess one of 2 things happens. Either it is not one of the letters in the word and gets filtered out, or it is in the word and appears at the top. Each time a wrong guess is made, the image of the hangman gets one more body part until it reaches 6. This is when the user loses and there is a try again button that resets the state of all the functions. When the user guesses all the letters in the word then there is a similar try again button that resists the state of the functions. </p>
+          <pre><code lang="typescript" id="mash-ex-1"></code></pre>
+          <p>This code shows that the state of gameWon is false. But when the function OnGameWon is activated then GameWon is set to true. </p>
+          <pre><code lang="typescript" id="mash-ex-2"></code></pre>
+          <p>That shows what onGameWon does. This part is using the every method on the letters array. The every method tests whether all elements in the array pass the test by the function. Then it returns true if the letters are guessed and false if they are not. Then when setGameWon is true the following occurs. </p>
+          <pre><code lang="typescript" id="mash-ex-3"></code></pre>
+          <p>This tells it that when gameWon is activated, then these things appear. I designed it to place a start-over button and to congratulate the user. The start-over button then resets all the states to their original state so the user can play again. </p>
+          <pre><code lang="typescript" id="mash-ex-4"></code></pre>
+          <p>The start-over button gets a new random word, sets game over and game won to false, sets the guesses back to 0, and enables the on-screen keyboard. The keyboard is disabled when the game won is activated so the user can no longer make guesses. 
+
+            An example of a callback function is the on-screen keyboard. The callbacks on this function are onGuess and Onchange. 
+            </p>
+            <pre><code lang="typescript" id="mash-ex-5"></code></pre>
+            <p>The way onChange works is that it uses useEffect so every time the text changes, onChange is called.</p>
+            <pre><code lang="typescript" id="mash-ex-6"></code></pre>
+            <p>Then the way on guesswork works is that every time the user presses the guess button, a guess is added. </p>
+            <pre><code lang="typescript" id="mash-ex-7"></code></pre>
+            <p>This code shows that the guess button can only be clicked if 6 letters or 1 letter are in the text box. It also resets the state of text emptying the text box so the user can guess again. Both callbacks are called back when </p>
+            <pre><code lang="typescript" id="mash-ex-8"></code></pre>
+            <p>is used. This leads the callbacks to the next functions. The keyboard also represents a list. There are 3 rows to a keyboard and each has its own letters. I put the letters in each row into an array called either top middle or bottom depending on what row they are in and in order.</p>
+            <pre><code lang="typescript" id="mash-ex-9"></code></pre>
+            <p>Then I called on the arrays by writing</p>
+            <pre><code lang="typescript" id="mash-ex-10"></code></pre>
+            <p>An example of a string is every word inside of const words. </p>
+            <pre><code lang="typescript" id="mash-ex-11"></code></pre>
+            <p>Const words is an array and every word inside is a string. 
+              An example of a procedure would be const getRandomWord. </p>
+              <pre><code lang="typescript" id="mash-ex-12"></code></pre>
+              <p>This procedure looks at the words in const words and picks out a random word.
+                This code is also an example of an iteration in a way. It looks through all words and repeats the actions of looking for a word until a word is found and then it stops. 
+                In the code 
+                </p>
+                <pre><code lang="typescript" id="mash-ex-13"></code></pre>
+                <p>There are several variables and each is assigned to its own state. For example, the variable guesses are set to 0 because there is nothing inside the brackets. The qwertyDisabled is assigned as false which means the Qwerty is still active. 
+                  With fixing errors in this code, I would say the biggest problem was not knowing how to write what I wanted. I understood the way tsx worked and I knew the steps that it would take to do something but I often did not know where to write certain things and when to put arrows and parentheses. 
+                  </p>
+
+
+
+
+
+
+
+          </div>
+        </a>
+     </div>
     </div>
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
     <a class="next" onclick="plusSlides(1)">&#10095; </a>

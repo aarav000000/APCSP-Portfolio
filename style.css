@@ -138,6 +138,39 @@ font-family: space;
 .p2:hover div.p2t{
  opacity: 1;
 }
+.p3{
+  content:" ";
+  background-image: url('/projects/hangman.png');
+  width: 42vw;
+  height: 26vw;
+  display: block;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  margin: auto;
+}
+.p3t{
+    position: absolute;
+    /* Center on the screen (help from ChatGPT) */  
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  /* End centering code */
+    width: 42vw;
+    height: 26vw;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #bb14fe;
+  /* Help from Hinkle */
+  box-sizing: border-box;
+  padding: 3vw;
+   font-size: 2vw;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    overflow-y: scroll;
+}
+.p3:hover div.p3t{
+ opacity: 1;
+}
 .star {
     position: fixed;
   pointer-events:none;
@@ -225,4 +258,10 @@ font-family: space;
 .prev:hover,
 .next:hover {
   transform: scale(1.2); /* Scale the element to 120% of its original size on hover */
+}
+pre code.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 1em;
+  font-size: 0.7vw;
 }

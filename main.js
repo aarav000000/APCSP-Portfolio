@@ -4,6 +4,51 @@
 
 // Our stylesheet.
 import './style.css'
+
+import mashEx1 from './code-fragments/ex1.tsx?raw';
+import mashEx2 from './code-fragments/ex2.tsx?raw';
+import mashEx3 from './code-fragments/ex3.tsx?raw';
+import mashEx4 from './code-fragments/ex4.tsx?raw';
+import mashEx5 from './code-fragments/ex5.tsx?raw';
+import mashEx6 from './code-fragments/ex6.tsx?raw';
+import mashEx7 from './code-fragments/ex7.tsx?raw';
+import mashEx8 from './code-fragments/ex8.tsx?raw';
+import mashEx9 from './code-fragments/ex9.tsx?raw';
+import mashEx10 from './code-fragments/ex10.tsx?raw';
+import mashEx11 from './code-fragments/ex11.tsx?raw';
+import mashEx12 from './code-fragments/ex12.tsx?raw';
+import mashEx13 from './code-fragments/ex13.tsx?raw';
+
+
+
+let examples = [
+  [mashEx1, '#mash-ex-1'],
+  [mashEx2, '#mash-ex-2'],
+  [mashEx3, '#mash-ex-3'],
+  [mashEx4, '#mash-ex-4'],
+  [mashEx5, '#mash-ex-5'],
+  [mashEx6, '#mash-ex-6'],
+  [mashEx7, '#mash-ex-7'],
+  [mashEx8, '#mash-ex-8'],
+  [mashEx9, '#mash-ex-9'],
+  [mashEx10, '#mash-ex-10'],
+  [mashEx11, '#mash-ex-11'],
+  [mashEx12, '#mash-ex-12'],
+  [mashEx13, '#mash-ex-13'],
+
+
+];
+examples.forEach(
+    ([code, id]) => {
+        let element = document.querySelector(id);
+        if (!element) {
+            console.log(`Warning: didn't find expected element ${id}`)
+        } else {
+            element.textContent = code;
+        }
+    }
+);
+
 //from chat.gpt//
 // JavaScript
 document.querySelector('.prev').addEventListener('click', () => plusSlides(-1));
@@ -137,7 +182,7 @@ document.querySelector('#fragment').textContent = fragment;
 
 import importExample from './code-fragments/importExample.sh?raw'
 document.querySelector('#importExample').textContent = importExample;
-
+`
 // A code highlighter
 import hljs from 'highlight.js'
 // You can check the folder for other themes!
@@ -148,4 +193,5 @@ import 'highlight.js/styles/panda-syntax-dark.css'
 hljs.highlightAll();
 
 // This is a pretty good start for JavaScript: we will add more as needed!
-`
+
+
