@@ -18,6 +18,7 @@ import mashEx10 from './code-fragments/ex10.tsx?raw';
 import mashEx11 from './code-fragments/ex11.tsx?raw';
 import mashEx12 from './code-fragments/ex12.tsx?raw';
 import mashEx13 from './code-fragments/ex13.tsx?raw';
+import mashEx14 from './code-fragments/ex14.tsx?raw';
 
 
 
@@ -35,6 +36,7 @@ let examples = [
   [mashEx11, '#mash-ex-11'],
   [mashEx12, '#mash-ex-12'],
   [mashEx13, '#mash-ex-13'],
+  [mashEx14, '#mash-ex-14'],
 
 
 ];
@@ -172,7 +174,11 @@ planets.forEach((planet, index) => {
   planet.style.animation = `rotate ${animationDuration}s linear infinite`;
 });
 
+const slides = document.querySelectorAll('.slide');
 
+slides.forEach((slide) => {
+slide.addEventListener('click', ()=> slide.classList.toggle('active'))
+});
 
 `
 

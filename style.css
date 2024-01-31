@@ -103,9 +103,7 @@ font-family: space;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
 }
-.p1:hover div.p1t{
- opacity: 1;
-}
+
 .p2{
   content:" ";
   background-image: url('/projects/binary.png');
@@ -135,9 +133,7 @@ font-family: space;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
 }
-.p2:hover div.p2t{
- opacity: 1;
-}
+
 .p3{
   content:" ";
   background-image: url('/projects/hangman.png');
@@ -168,9 +164,7 @@ font-family: space;
     transition: opacity 0.3s ease-in-out;
     overflow-y: scroll;
 }
-.p3:hover div.p3t{
- opacity: 1;
-}
+
 .star {
     position: fixed;
   pointer-events:none;
@@ -264,4 +258,43 @@ pre code.hljs {
   overflow-x: auto;
   padding: 1em;
   font-size: 0.7vw;
+}
+
+.p4{
+  content:" ";
+  background-image: url('/projects/image-filters.png');
+  width: 42vw;
+  height: 26vw;
+  display: block;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  margin: auto;
+}
+.p4t{
+    position: absolute;
+    /* Center on the screen (help from ChatGPT) */  
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  /* End centering code */
+    width: 42vw;
+    height: 26vw;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #bb14fe;
+  /* Help from Hinkle */
+  box-sizing: border-box;
+  padding: 3vw;
+   font-size: 2vw;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    overflow-y: scroll;
+}
+
+.slide .slide-text {
+  opacity: 0;
+}
+.slide:hover .slide-text,
+.slide.active .slide-text {
+  opacity: 1;
 }

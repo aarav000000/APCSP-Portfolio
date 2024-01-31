@@ -41,19 +41,19 @@
        <div class='p1 slide'>
 
 
-         <div class='p1t'>
+         <div class='p1t slide-text'>
            In this project I used HTML, CSS, and Javascript to create a portfolio to display my work. 
          </div>
        </div>
       <div class='p2 slide'>
         
 
-         <div class='p2t'>In the Binary Search project my team created a website that could guess the NBA team the user was thinking of in 5 guess or less.This project was done with pair programing with three people. Also in this project we put in different inputs for every output to try to guess the team.<a href='https://binary-search-game-group-project-iacs-apcsp-23-24.iacs-apcsp-23-24.repl.co/' target='_blank' >Click Here To Play</a></div>
+         <div class='p2t  slide-text'>In the Binary Search project my team created a website that could guess the NBA team the user was thinking of in 5 guess or less.This project was done with pair programing with three people. Also in this project we put in different inputs for every output to try to guess the team.<a href='https://binary-search-game-group-project-iacs-apcsp-23-24.iacs-apcsp-23-24.repl.co/' target='_blank' >Click Here To Play</a></div>
 
       </div>
       <div class='p3 slide'>
         <a href='https://hangman-aarav-patel.netlify.app/'  target='_blank'>
-        <div class='p3t'>
+        <div class='p3t  slide-text'>
           <p>The game I made was a hangman game. The way it works is that there is an on-screen keyboard. After the user types a letter in, they have to press guess. Once they press guess one of 2 things happens. Either it is not one of the letters in the word and gets filtered out, or it is in the word and appears at the top. Each time a wrong guess is made, the image of the hangman gets one more body part until it reaches 6. This is when the user loses and there is a try again button that resets the state of all the functions. When the user guesses all the letters in the word then there is a similar try again button that resists the state of the functions. </p>
           <pre><code lang="typescript" id="mash-ex-1"></code></pre>
           <p>This code shows that the state of gameWon is false. But when the function OnGameWon is activated then GameWon is set to true. </p>
@@ -90,16 +90,20 @@
                 <p>There are several variables and each is assigned to its own state. For example, the variable guesses are set to 0 because there is nothing inside the brackets. The qwertyDisabled is assigned as false which means the Qwerty is still active. 
                   With fixing errors in this code, I would say the biggest problem was not knowing how to write what I wanted. I understood the way tsx worked and I knew the steps that it would take to do something but I often did not know where to write certain things and when to put arrows and parentheses. 
                   </p>
-
-
-
-
-
-
-
-          </div>
-        </a>
-     </div>
+              </div>
+            </a>
+            </div>
+              <div class='p4 slide'>
+                <a href='https://aarav-patel-image-filters.netlify.app/'  target='_blank'>
+                <div class='p4t  slide-text'>
+                 <p>The custom filter I chose to make was an edge filter. This filter works by looking at the pixels at the top, bottom, right, and left. It looks at these pixels and if there is a great enough color difference between them, it detects an edge so the pixel becomes a black pixel to create an edge.  </p>
+                 <pre><code lang="typescript" id="mash-ex-14"></code></pre>
+                 <p>  This code shows that if any of the pixels on the top, bottom, left, and right are greater than the colorThreshold, the pixel will become black because it sets the red, blue, and green values all to 0 which gives you black.</p>
+                </div>
+              </a>
+              </div>
+ 
+     
     </div>
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
     <a class="next" onclick="plusSlides(1)">&#10095; </a>
