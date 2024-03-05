@@ -3,6 +3,7 @@ body {
     background-color: black; /* Background color of space */
     position: relative;
   color: white;
+  cursor: none;
   
 }
 .container {
@@ -21,7 +22,14 @@ font-family: space;
   font-family: space;
   src: url("space.ttf");
 }
-
+@font-face{
+  font-family: header;
+  src: url("heading.otf");
+}
+@font-face{
+  font-family: content;
+  src: url("content.otf");
+}
 .names {
     position: relative;
   z-index: 2;
@@ -45,6 +53,9 @@ font-family: space;
   font-size: 4vw;
 
  position: relative;
+}
+h1 {
+  font-family: 'header';
 }
 .slide {
     display: none;
@@ -84,6 +95,7 @@ font-family: space;
   background-repeat: no-repeat;
   position: relative;
   margin: auto;
+  font-family: 'content';
 }
 .p1t{
     position: absolute;
@@ -114,6 +126,7 @@ font-family: space;
   background-repeat: no-repeat;
   position: relative;
   margin: auto;
+  font-family: 'content';
 }
 .p2t{
     position: absolute;
@@ -144,6 +157,7 @@ font-family: space;
   background-repeat: no-repeat;
   position: relative;
   margin: auto;
+  font-family: 'content';
 }
 .p3t{
     position: absolute;
@@ -270,6 +284,7 @@ pre code.hljs {
   background-repeat: no-repeat;
   position: relative;
   margin: auto;
+  font-family: 'content';
 }
 .p4t{
     position: absolute;
@@ -297,4 +312,44 @@ pre code.hljs {
 .slide:hover .slide-text,
 .slide.active .slide-text {
   opacity: 1;
+}
+.cursor {
+  position: fixed;
+  width: 32px; /* Adjust width of the cursor image */
+  height: 32px; /* Adjust height of the cursor image */
+  background-image: url('cursor.png'); /* Path to your cursor image */
+  background-size: cover;
+
+  z-index: 9999; /* Ensure it's above other elements */
+}
+.p5{
+  content:" ";
+  background-image: url('/projects/data.png');
+  width: 42vw;
+  height: 26vw;
+  display: block;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  margin: auto;
+  font-family: 'content';
+}
+.p5t{
+  position: absolute;
+  /* Center on the screen (help from ChatGPT) */  
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+/* End centering code */
+  width: 42vw;
+  height: 26vw;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #bb14fe;
+/* Help from Hinkle */
+box-sizing: border-box;
+padding: 3vw;
+ font-size: 2vw;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  overflow-y: scroll;
 }

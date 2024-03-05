@@ -19,6 +19,9 @@ import mashEx11 from './code-fragments/ex11.tsx?raw';
 import mashEx12 from './code-fragments/ex12.tsx?raw';
 import mashEx13 from './code-fragments/ex13.tsx?raw';
 import mashEx14 from './code-fragments/ex14.tsx?raw';
+import mashEx15 from './code-fragments/ex15.tsx?raw';
+import mashEx16 from './code-fragments/ex16.tsx?raw';
+import mashEx17 from './code-fragments/ex17.tsx?raw';
 
 
 
@@ -37,6 +40,9 @@ let examples = [
   [mashEx12, '#mash-ex-12'],
   [mashEx13, '#mash-ex-13'],
   [mashEx14, '#mash-ex-14'],
+  [mashEx15, '#mash-ex-15'],
+  [mashEx16, '#mash-ex-16'],
+  [mashEx17, '#mash-ex-17'],
 
 
 ];
@@ -179,7 +185,14 @@ const slides = document.querySelectorAll('.slide');
 slides.forEach((slide) => {
 slide.addEventListener('click', ()=> slide.classList.toggle('active'))
 });
+document.addEventListener("DOMContentLoaded", function() {
+  var cursor = document.querySelector(".cursor");
 
+  document.addEventListener("mousemove", function(e) {
+      cursor.style.left = e.pageX - cursor.offsetWidth / 2 + "px";
+      cursor.style.top = e.pageY - cursor.offsetHeight / 2 + "px";
+  });
+});
 `
 
 // We can import raw code fragments for samples, like this:

@@ -102,6 +102,19 @@
                 </div>
               </a>
               </div>
+              <div class='p5 slide'>
+                <a href='https://deer-crash-data.netlify.app/'  target='_blank'>
+                <div class='p5t  slide-text'>
+                 <p>I played several different roles in my group. I helped sort the data by going through the list and determining which categories fit under which weather conditions. I helped find bugs and fix problems in the code. I also gave ideas on how to set up the model and help execute those ideas. The purpose of the bar graph is to help viewers understand which weather conditions put drivers at the most risk of hitting a deer. The purpose of the line graph is to see what time of the day you are at the most risk for a deer crash. The way the bar graph works is simple. There are four categories; rainy, snowy, clear, and foggy. Each category has subcategories that are written in the csv. For example, for clear days there are subcategories like   "Clear", "Clear/Clear", and "Clear/Other". These all mean clearly but they are reported differently so the subcategories have to be filtered and go into one of the four categories. Then it counts each of the subcategories and adds one to the main category for each one. After that, each category is divided by a number that shows how many of those days there have been in the past 7 years. In the end, it displays the number of deer crashes per day during the weather conditions. The line graph works differently. We sorted the data out through military time. If it was 12 AM then it would be 0. If it has a PM at the end of it then it would add 12 to the number. Then it looks through the csv by filtering it like so. One example of a list in my code is this.  </p>
+                 <pre><code lang="typescript" id="mash-ex-15"></code></pre>
+                  <p> This list shows all the subcategories that go into the main category of clear days. Another list in the code is</p>
+                 <pre><code lang="typescript" id="mash-ex-16"></code></pre>
+                  <p> This list tells it to look through the weather conditions and then read through the list already created and if the subcategory is counted, it adds one to the bar data for that category. An example would be if it said “Clear/Clear” It would read this and since it is in the clear list it would add one to the clear data. It repeats this process until all of the subcategories are counted. An example of an algorithm in this code would be the filter of the time. If the time was 12 AM the code would set it equal to 0. </p>
+                 <pre><code lang="typescript" id="mash-ex-17"></code></pre>
+                 <p> It knew this by looking at the hour and the ampm parts. For the PM it would look through the data like this and add 12 if there was a PM in the ampm part. The way it is split is if it is before the colon it is the hour. If it is directly after the colon it is the minutes. If it is a space after the colon it is ampm. Information we extracted from the data set was the weather conditions and the crash times. Potential biases that may exist in our data may be when the weather is reported as, “Snowy/ Clear” We categorized this as snowy but it could go both ways. This happens multiple times when we must decide between two categories for one subcategory. The conclusion you can draw from my line data is that the most common deer crash time is 5 PM and the least common deer crash time is 2 PM. Conclusions you cannot make from the line data is when you are at the most risk of a deer crash. The data doesn’t account for the number of drivers on the road at the time so it does not show risk. Conclusions you make from the bar data is the weather conditions put you at the most risk for a deer crash. You cannot conclude the total number of deer crashes during certain weather conditions in the bar data. </p>
+                </div>
+              </a>
+              </div>
  
      
     </div>
@@ -115,7 +128,7 @@
 
   
      
-      
+<div class="cursor"></div>
       
       <script type="module" src="/main.js"></script>
   </body>
