@@ -68,7 +68,6 @@ showSlides(slideIndex);
 function plusSlides(n) {
     showSlides(slideIndex += n);
 }
-
 function showSlides(n) {
     const slides = document.querySelectorAll('.slide');
 
@@ -185,14 +184,7 @@ const slides = document.querySelectorAll('.slide');
 slides.forEach((slide) => {
 slide.addEventListener('click', ()=> slide.classList.toggle('active'))
 });
-document.addEventListener("DOMContentLoaded", function() {
-  var cursor = document.querySelector(".cursor");
 
-  document.addEventListener("mousemove", function(e) {
-      cursor.style.left = e.pageX - cursor.offsetWidth / 2 + "px";
-      cursor.style.top = e.pageY - cursor.offsetHeight / 2 + "px";
-  });
-});
 `
 
 // We can import raw code fragments for samples, like this:

@@ -3,7 +3,6 @@ body {
     background-color: black; /* Background color of space */
     position: relative;
   color: white;
-  cursor: none;
   
 }
 .container {
@@ -313,15 +312,7 @@ pre code.hljs {
 .slide.active .slide-text {
   opacity: 1;
 }
-.cursor {
-  position: fixed;
-  width: 32px; /* Adjust width of the cursor image */
-  height: 32px; /* Adjust height of the cursor image */
-  background-image: url('cursor.png'); /* Path to your cursor image */
-  background-size: cover;
 
-  z-index: 9999; /* Ensure it's above other elements */
-}
 .p5{
   content:" ";
   background-image: url('/projects/data.png');
