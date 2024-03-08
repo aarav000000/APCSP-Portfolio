@@ -144,6 +144,7 @@ h1 {
    font-size: 2vw;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
+    overflow-y: scroll;
 }
 
 .p3{
