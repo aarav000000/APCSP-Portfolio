@@ -22,7 +22,9 @@ import mashEx14 from './code-fragments/ex14.tsx?raw';
 import mashEx15 from './code-fragments/ex15.tsx?raw';
 import mashEx16 from './code-fragments/ex16.tsx?raw';
 import mashEx17 from './code-fragments/ex17.tsx?raw';
-
+import mashEx18 from './code-fragments/ex18.tsx?raw';
+import mashEx19 from './code-fragments/ex19.tsx?raw';
+import mashEx20 from './code-fragments/ex20.tsx?raw';
 
 
 let examples = [
@@ -43,6 +45,9 @@ let examples = [
   [mashEx15, '#mash-ex-15'],
   [mashEx16, '#mash-ex-16'],
   [mashEx17, '#mash-ex-17'],
+  [mashEx18, '#mash-ex-18'],
+  [mashEx19, '#mash-ex-19'],
+  [mashEx20, '#mash-ex-20'],
 
 
 ];

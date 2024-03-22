@@ -114,6 +114,24 @@
                 </div>
               </a>
               </div>
+
+              <div class='p6 slide'>
+                <a href='https://covid-19-model.netlify.app/'  target='_blank'>
+                <div class='p6t  slide-text'>
+                  <p>The overall purpose of my model is to visualize how effectively COVID-19 could be countered by quarantine. The way it does this is by first putting one sick person in a population of healthy people. Depending on the infection percentage, the person would have that percent chance to share it with someone else in the population. After the person gets COVID-19, it counts four turns or four days and then it puts them in quarantine. When the person is in quarantine they cannot spread covid anymore. The person is quarantined for 5 turns/days and then the person comes back as healthy. Then there is a 10-day cooldown that prevents the person from getting COVID again because the body has automatic immunity after getting COVID. Features of the real world used in this model were the statistics. People normally take 2-3 days to realize they have covid and then after they quarantine, others are still able to gain symptoms 2 or more days later. This is why the time it takes for the person to become quarantined is 4 days. After that, the person is quarantined for 5 days because that is the recommended amount by the CDC. Then a person typically has immunity for 2-3 months which is 60-90 days but for the sake of this experiment, my group set it to 10 days/turns. My model fails to capture the covid vaccine. In the real world, people could get a vaccine that would significantly lower their chances of getting covid but this model does not account for that. If this was scaled to millions, I would change the way the person could spread the disease. Currently, the person could spread COVID to anyone in the population but if it was scaled to millions the person should only be able to spread COVID to the 8 people surrounding them. My Macbook could not run the program with a million people. If I had to estimate how long it would take to simulate on a computer capable of running it, I would assume it would take at least 28 runs to infect everyone once, assuming the infection rate is 100% and the person infects the eight people closest to them. This is the output when the program is run with a 100% infection rate. It is seen that it only takes 29 days to eliminate COVID from this population with quarantine. </p>
+                <img src="graph1.png" alt="graph1">
+                <p>Then I put the same infection chance and made the population the largest it could be through the slider. These were my results</p>
+                <img src="graph2.png" alt="graph2">
+              <p>Even though the population was more than 10 times larger, It only took 5 more turns/days to eliminate the virus. An example of a list in my code is </p>
+              <pre><code lang="typescript" id="mash-ex-18"></code></pre>
+              <p>Population is a list containing instances of the Patient type, each representing an individual inside the population. This code determines what each person in the code begins with before they get COVID. An example of an algorithm in my code is </p>
+              <pre><code lang="typescript" id="mash-ex-19"></code></pre>
+              <p>This algorithm shows the process of how a person becomes sick and then quarantined and then has immunity and then the whole process is able to repeat. This works because after setting the states to true, I set it to false. For example, I set quarantine as true when the person is infected for 4 days, but then I also set it to false after the person has been quarantined for 5 days so the cycle could be repeated and the person is not quarantined forever. An example of a procedure is </p>
+              <pre><code lang="typescript" id="mash-ex-20"></code></pre>
+            <p>This is a procedure because it tells it to check and update the patient, population, and parameters every round. This helps simplify the program because it makes the code a lot more organized and manageable. </p>
+            </div>
+              </a>
+              </div>
  
      
     </div>
